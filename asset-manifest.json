@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/benscottdev/BMI-Calculator.git/static/css/main.e6c13ad2.css",
+    "main.js": "/benscottdev/BMI-Calculator.git/static/js/main.694878be.js",
+    "index.html": "/benscottdev/BMI-Calculator.git/index.html",
+    "main.e6c13ad2.css.map": "/benscottdev/BMI-Calculator.git/static/css/main.e6c13ad2.css.map",
+    "main.694878be.js.map": "/benscottdev/BMI-Calculator.git/static/js/main.694878be.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.694878be.js"
+  ]
+}
