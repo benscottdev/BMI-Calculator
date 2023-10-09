@@ -26,10 +26,10 @@ function BmiCalculator(props) {
 
   return (
     <div className="calculator">
-      <form onSubmit={calculateBmi}>
+      <form>
         <input
           id="height"
-          type="numeric"
+          type="number"
           placeholder="Height (m)"
           onChange={getHeight}
           required
@@ -48,7 +48,19 @@ function BmiCalculator(props) {
           onChange={getAge}
           required
         />
-        <button id="submit">Calculate</button>
+        <div className="buttons">
+          <button id="submit" onClick={calculateBmi}>
+            Calculate
+          </button>
+          <button
+            id="reset"
+            onClick={() => {
+              window.location.reload();
+            }}
+          >
+            Reset
+          </button>
+        </div>
       </form>
     </div>
   );
