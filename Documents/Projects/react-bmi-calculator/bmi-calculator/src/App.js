@@ -1,7 +1,8 @@
 import "./App.css";
+import BmiContainer from "./Components/BmiContainer";
 
 function App() {
-  return null;
+  return <BmiContainer />;
 }
 
 export default App;
