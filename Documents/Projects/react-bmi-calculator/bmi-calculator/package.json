@@ -1,7 +1,7 @@
 {
   "name": "bmi-calculator",
   "version": "0.1.0",
-  "homepage": "https://github.com/benscottdev/BMI-Calculator.git",
+  "homepage": "https://github.com/benscottdev/bmi.git",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -14,7 +14,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
