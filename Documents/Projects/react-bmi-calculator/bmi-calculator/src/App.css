@@ -80,8 +80,8 @@
 .results {
   background-color: #b2cc7c;
   border-radius: 45px;
-  position: absolute;
-  right: 30px;
+  position: relative;
+  left: 400px;
   top: 50%;
   transform: translateY(-50%);
   width: 350px;
@@ -107,21 +107,21 @@
 }
 
 .results h2 {
-  font-size: 25px;
+  font-size: 20px;
+  margin-top: 10px;
   color: #ff4545;
 }
 
 #what-this-means {
-  position: relative;
-  top: 60%;
+  position: absolute;
+  top: 90%;
   left: 50%;
-  transform: translate(-50%, -95%);
+  transform: translate(-50%, -90%);
   color: #769633;
   font-family: Helvetica;
   background-color: #c8e48d;
   padding: 20px;
   border-radius: 30px;
-  height: 150px;
   width: 300px;
   text-align: center;
   line-height: 12px;
