@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Handjet&display=swap");
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  background-color: rgb(76, 90, 136);
+}
+
+.calulator-section {
+  width: 350px;
+  height: 500px;
+  background-color: rgb(208, 208, 208);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  box-shadow: 0px 20px 30px rgba(63, 63, 63, 0.883);
+}
+
+#number-input {
+  width: 85%;
+  border-radius: 20px;
+  background-color: rgb(189, 189, 189);
+  height: 60px;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 30px;
+  text-align: center;
+  font-family: "Handjet";
+  border: none;
+}
+.inputs input {
+  border-radius: 5px;
+  width: 95px;
+  height: 60px;
+  margin: 2px;
+  border: none;
+  text-align: center;
+  font-family: "Handjet";
+  font-size: 30px;
+}
+
+.inputs input:active {
+  scale: 95%;
+}
+
+.inputs input:hover {
+  background-color: rgb(231, 231, 231);
+}
+
+.inputs {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#equals-btn {
+  background-color: rgb(122, 209, 124);
+}
+
+#clear-btn {
+  background-color: rgb(235, 246, 113);
+}
+
+#delete-btn {
+  background-color: rgb(244, 113, 113);
+}
+
+#dot-btn,
+#add-btn,
+#minus-btn,
+#divide-btn,
+#times-btn {
+  background-color: rgb(227, 224, 227);
+}
+8=\77

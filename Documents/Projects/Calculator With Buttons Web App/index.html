@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="calulator-section">
+        <input type="text" id="number-input" placeholder="calculate" />
+        <div class="inputs">
+          <input id="one-btn" value="1" type="button" onclick="display('1')" />
+          <input id="two-btn" value="2" type="button" onclick="display('2')" />
+          <input
+            id="three-btn"
+            value="3"
+            type="button"
+            onclick="display('3')"
+          />
+          <input id="four-btn" value="4" type="button" onclick="display('4')" />
+          <input id="five-btn" value="5" type="button" onclick="display('5')" />
+          <input id="six-btn" value="6" type="button" onclick="display('6')" />
+          <input
+            id="seven-btn"
+            value="7"
+            type="button"
+            onclick="display('7')"
+          />
+          <input
+            id="eight-btn"
+            value="8"
+            type="button"
+            onclick="display('8')"
+          />
+          <input id="nine-btn" value="9" type="button" onclick="display('9')" />
+          <input id="zero-btn" value="0" type="button" onclick="display('0')" />
+          <input id="add-btn" value="+" type="button" onclick="display('+')" />
+          <input
+            id="minus-btn"
+            value="-"
+            type="button"
+            onclick="display('-')"
+          />
+          <input
+            id="divide-btn"
+            value="/"
+            type="button"
+            onclick="display('/')"
+          />
+          <input
+            id="times-btn"
+            value="*"
+            type="button"
+            onclick="display('*')"
+          />
+          <input id="dot-btn" value="." type="button" onclick="display('.')" />
+          <input id="equals-btn" value="=" type="button" onclick="solve()" />
+          <input id="clear-btn" value="C" type="button" onclick="reset()" />
+          <input
+            id="delete-btn"
+            value="<"
+            type="button"
+            onclick="backspace()"
+          />
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

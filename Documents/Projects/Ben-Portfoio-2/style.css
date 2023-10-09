@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=IBM+Plex+Mono:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@200;400;600&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Exo 2", helvetica;
+  font-weight: 200;
+}
+
+#back-video {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.container-home {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 18%;
+  transform: translate(-18%, -50%);
+}
+
+.container-home h1 {
+  font-size: 130px;
+  font-weight: 200;
+  margin-bottom: -30px;
+  color: #ffffff;
+  letter-spacing: -1px;
+  opacity: 80%;
+}
+
+.container-home h2 {
+  margin-left: 11px;
+  cursor: pointer;
+  letter-spacing: 4.3px;
+  color: #cecbc8;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+#hidden-langs {
+  position: absolute;
+  top: 95%;
+  left: 7.8px;
+  line-height: 30px;
+  color: #cecbc8;
+  display: none;
+}
+
+#hidden-langs li {
+  list-style-type: "[>] ";
+  font-size: 24px;
+}
+
+.nav-links {
+  font-family: "Exo 2";
+  font-weight: 200;
+  position: absolute;
+  top: 52%;
+  right: 20%;
+  transform: translate(-20%, -52%);
+}
+
+.nav-links a {
+  text-decoration: 0;
+  color: #ffffff;
+  transition: ease 0.3s;
+}
+
+.nav-links li {
+  list-style: none;
+  font-size: 35px;
+  margin-bottom: 20px;
+  transition: ease 0.5s;
+}
+
+.nav-links a:hover,
+.nav-links li:hover {
+  color: rgb(209, 92, 24);
+  scale: 120%;
+}

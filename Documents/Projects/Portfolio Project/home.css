@@ -1,0 +1,261 @@
+/* import font to use on site */
+@font-face {
+  font-family: Akira;
+  src: url(akira.otf);
+}
+
+/* default html and body css */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Akira;
+  color: rgb(255, 255, 255);
+}
+
+/* span as background so it can be manipulated easier */
+#background-color {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 300ms ease;
+}
+
+/* headings */
+
+.main-heading {
+  position: absolute;
+  left: 15%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.main-heading h1 {
+  font-size: 90px;
+  margin-bottom: -20px;
+  transition: 300ms ease;
+}
+
+.main-heading h2 {
+  font-size: 20px;
+  color: rgb(255, 0, 0);
+  letter-spacing: 1px;
+  transition: 300ms ease;
+}
+
+/* all nav css */
+
+.nav-links a {
+  text-decoration: 0;
+  color: white;
+}
+
+#about-span {
+  position: absolute;
+  right: 450px;
+  bottom: 0px;
+  padding: 5px;
+  text-align: center;
+  width: 150px;
+  height: 15px;
+  background-color: rgb(255, 0, 0);
+  transition: 300ms ease;
+}
+
+#projects-span {
+  position: absolute;
+  right: 250px;
+  bottom: 0px;
+  padding: 5px;
+  text-align: center;
+  width: 150px;
+  height: 15px;
+  background-color: rgb(255, 0, 0);
+  transition: 300ms ease;
+}
+
+#talk-span {
+  position: absolute;
+  right: 50px;
+  bottom: 0px;
+  padding: 5px;
+  text-align: center;
+  width: 150px;
+  height: 15px;
+  background-color: rgb(255, 0, 0);
+  transition: 300ms ease;
+}
+
+/* nav suedo css elements eg. hover & active */
+
+#about-span:hover {
+  height: 150px;
+}
+
+#projects-span:hover {
+  height: 150px;
+}
+
+#talk-span:hover {
+  height: 150px;
+}
+
+/* switch mode  */
+
+.light-switch {
+  position: absolute;
+  left: 25px;
+  bottom: 25px;
+}
+#switch {
+  font-size: 8px;
+  cursor: pointer;
+  width: 80px;
+  height: 30px;
+  border: none;
+  background-color: rgb(14, 14, 14);
+  color: rgb(255, 0, 0);
+  font-family: Akira;
+  transition: 300ms ease;
+}
+
+/* ABOUT PAGE */
+
+.about-heading {
+  position: absolute;
+  left: 50px;
+  top: 10px;
+}
+
+#heading-about {
+  font-size: 40px;
+  margin-bottom: -10px;
+  transition: 300ms ease;
+}
+#heading-about a {
+  text-decoration: none;
+  color: white;
+}
+
+#subheading-about {
+  font-size: 9px;
+  color: rgb(255, 0, 0);
+  letter-spacing: 1px;
+  transition: 300ms ease;
+}
+
+.container-about {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container-about h1 {
+  color: red;
+}
+
+.container-about p {
+  font-size: 12px;
+}
+
+#about-span-about {
+  position: absolute;
+  right: 450px;
+  bottom: 0px;
+  padding: 5px;
+  text-align: center;
+  width: 150px;
+  height: 15px;
+  background-color: rgb(255, 0, 0);
+  transition: 200ms ease;
+}
+
+#projects-span-about {
+  position: absolute;
+  right: 250px;
+  bottom: 0px;
+  padding: 5px;
+  text-align: center;
+  width: 150px;
+  height: 15px;
+  background-color: rgb(255, 0, 0);
+  transition: 300ms ease;
+}
+
+#talk-span-about {
+  position: absolute;
+  right: 50px;
+  bottom: 0px;
+  padding: 5px;
+  text-align: center;
+  width: 150px;
+  height: 15px;
+  background-color: rgb(255, 0, 0);
+  transition: 300ms ease;
+}
+
+/* nav suedo css elements eg. hover & active */
+
+#about-span-about:hover {
+  height: 150px;
+}
+
+#projects-span-about:hover {
+  height: 150px;
+}
+
+#talk-span-about:hover {
+  height: 150px;
+}
+
+/* switch mode  */
+
+/* Let's talk page */
+
+.container-talk {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container-talk form {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-talk label {
+  color: rgb(252, 252, 252);
+  margin-bottom: 3px;
+}
+
+#name-input {
+  margin-bottom: 20px;
+}
+
+#phone-input {
+  margin-bottom: 20px;
+}
+
+#email-input {
+  margin-bottom: 20px;
+}
+
+#message-input {
+  margin-bottom: 20px;
+  height: 100px;
+  width: 300px;
+}
+
+.container-talk button {
+  border: none;
+  color: white;
+  background-color: red;
+  font-family: akira;
+  height: 40px;
+}

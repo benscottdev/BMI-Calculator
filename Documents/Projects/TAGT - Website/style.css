@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;500;700;900&display=swap");
+
+html,
+body {
+  font-family: "Darker Grotesque", sans-serif;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  background-color: #a8defb;
+}
+
+.header {
+  margin-top: 1rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.nav-links li {
+  justify-content: space-evenly;
+  margin-left: 5.5rem;
+  font-weight: 700;
+  color: #4cbffe;
+}
+
+#get-in-touch {
+  position: absolute;
+  top: 1%;
+  right: 4%;
+  width: 100px;
+  height: 40px;
+  background-color: #4cbffe;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  padding: 3px;
+  text-decoration: none;
+  color: white;
+}
+
+/* #get-in-touch:hover {
+  
+} */
+
+#logo {
+  cursor: pointer;
+  position: absolute;
+  left: 4%;
+  top: 1%;
+  width: 150px;
+  margin: 20px;
+}
+
+.welcome h1 {
+  display: flex;
+  font-size: 3.5rem;
+  justify-content: center;
+  color: #4cbffe;
+  text-align: center;
+}
+
+.container-hero {
+  display: inline-block;
+  margin: 0 auto;
+  background-color: #e9eaeb;
+  border-radius: 50%;
+}
+
+.container-hero h2 {
+  font-weight: 700;
+  font-size: 3rem;
+  color: #4cbffe;
+  margin: 3rem;
+  text-align: center;
+}
+
+.container-hero p {
+  font-weight: 300;
+  margin: 3rem;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  text-align: center;
+}

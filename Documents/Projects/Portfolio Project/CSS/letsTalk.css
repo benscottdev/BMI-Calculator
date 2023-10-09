@@ -1,0 +1,153 @@
+/* import font to use on site */
+@font-face {
+  font-family: Akira;
+  src: url(akira.otf);
+}
+
+/* default html and body css */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Akira;
+  color: rgb(255, 255, 255);
+}
+
+/* span as background so it can be manipulated easier */
+#background-color {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 300ms ease;
+}
+
+/* headings  header  */
+
+.talk-heading {
+  position: absolute;
+  left: 50px;
+  top: 10px;
+}
+
+#heading-talk {
+  font-size: 40px;
+  margin-bottom: -10px;
+  transition: 300ms ease;
+}
+#heading-talk a {
+  text-decoration: none;
+  color: white;
+}
+
+#subheading-talk {
+  font-size: 9px;
+  color: rgb(255, 0, 0);
+  letter-spacing: 1px;
+  transition: 300ms ease;
+}
+
+/* inputs and form  */
+
+.container-talk {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container-talk form {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-talk label {
+  color: rgb(252, 252, 252);
+  margin-bottom: 3px;
+}
+
+#name-input {
+  margin-bottom: 20px;
+}
+
+#phone-input {
+  margin-bottom: 20px;
+}
+
+#email-input {
+  margin-bottom: 20px;
+}
+
+#message-input {
+  margin-bottom: 20px;
+  height: 100px;
+  width: 300px;
+}
+
+.container-talk button {
+  border: none;
+  color: white;
+  background-color: red;
+  font-family: akira;
+  height: 40px;
+}
+
+/* nav elements css */
+
+.nav-links a {
+  text-decoration: 0;
+  color: white;
+}
+
+#about-span-talk {
+  position: absolute;
+  right: 450px;
+  bottom: 0px;
+  padding: 5px;
+  text-align: center;
+  width: 150px;
+  height: 15px;
+  background-color: rgb(255, 0, 0);
+  transition: 200ms ease;
+}
+
+#projects-span-talk {
+  position: absolute;
+  right: 250px;
+  bottom: 0px;
+  padding: 5px;
+  text-align: center;
+  width: 150px;
+  height: 15px;
+  background-color: rgb(255, 0, 0);
+  transition: 300ms ease;
+}
+
+#talk-span-talk {
+  position: absolute;
+  right: 50px;
+  bottom: 0px;
+  padding: 5px;
+  text-align: center;
+  width: 150px;
+  height: 15px;
+  background-color: rgb(255, 0, 0);
+  transition: 300ms ease;
+}
+
+/* nav suedo css elements eg. hover & active */
+
+#about-span-talk:hover {
+  height: 150px;
+}
+
+#projects-span-talk:hover {
+  height: 150px;
+}
+
+#talk-span-talk:hover {
+  height: 150px;
+}

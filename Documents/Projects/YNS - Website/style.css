@@ -1,0 +1,199 @@
+html {
+  font-size: 16px;
+}
+
+#yns-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 100px;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  background-color: #123722;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  margin: 0px;
+  padding: 1px;
+}
+
+.home-hero {
+  width: 100%;
+  height: 300px;
+  background-image: url("YNS/hero-image.webp");
+  background-repeat: no-repeat;
+}
+
+.home-hero img {
+  width: 100%;
+}
+
+.home-hero p {
+  position: relative;
+  top: 40%;
+  font-size: 1.25rem;
+  font-style: italic;
+  font-weight: lighter;
+  text-align: center;
+  color: #ffffff;
+  background-color: hsla(146, 51%, 14%, 75%);
+}
+
+.tattoo-styles {
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: center;
+  color: #123722;
+  font-size: 0.7rem;
+  width: 400px;
+  font-weight: lighter;
+}
+
+#book-button {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 30px;
+  color: #f39628;
+  font-family: times;
+  font-size: 0.85rem;
+  height: 35px;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #f39628;
+  background: #fff;
+  box-shadow: -2px 3px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 5px 20px;
+  transition: 0.5s;
+}
+
+#book-button:hover {
+  color: white;
+  background-color: #f39628;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+footer {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  bottom: 0;
+  justify-content: flex-end;
+  background-color: #123722;
+  color: white;
+}
+
+footer h5 {
+  width: 150px;
+  margin-right: 20px;
+  text-align: center;
+  font-weight: lighter;
+}
+
+/***HAMBURGER MENU ***/
+
+#navbarToggle a {
+  display: flex;
+  color: #123722;
+  line-height: 30px;
+}
+
+#navbarToggle {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  top: 40px;
+  left: 50px;
+  z-index: 1;
+  user-select: none;
+}
+
+#navbarToggle a {
+  text-decoration: none;
+  color: #123722;
+  transition: color 0.3s ease-in-out;
+}
+
+#navbarToggle a:hover {
+  color: #f39628;
+}
+
+#navbarToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+}
+
+#navbarToggle span {
+  display: block;
+  width: 32px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #ffffff;
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+#navbarToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#navbarToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+#navbarToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+#navbarToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#navbarToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#navbar {
+  position: absolute;
+  width: auto;
+  height: auto;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+
+  background: #e3e3e3;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+
+  transition: transform 0.4s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+#navbarToggle input:checked ~ ul {
+  transform: none;
+}

@@ -1,0 +1,49 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
+  background-image: url(Background.jpg);
+  background-size: 100%;
+}
+
+.nav-links {
+  position: absolute;
+  top: 220px;
+  left: 550px;
+  font-size: 50px;
+}
+
+.nav-links a {
+  opacity: 70%;
+  font-weight: bolder;
+  text-decoration: none;
+  background-color: #484848;
+  color: transparent;
+  text-shadow: 2px 2px 3px rgba(135, 135, 135, 0.5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  transition: 250ms ease-in 35ms;
+}
+
+.nav-links li {
+  list-style: none;
+  text-align: right;
+}
+
+.nav-links a:hover {
+  color: rgb(255, 238, 0);
+}
+
+.name h1 {
+  position: absolute;
+  left: 30px;
+  opacity: 80%;
+  font-size: 100px;
+  background-color: #484848;
+  color: transparent;
+  text-shadow: 2px 2px 3px rgba(135, 135, 135, 0.5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+}

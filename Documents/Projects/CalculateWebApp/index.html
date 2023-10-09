@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator Web App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="calculator">
+        <h1>Calculate!</h1>
+        <input type="number" id="first-number" placeholder="First Number" />
+        <input type="number" id="second-number" placeholder="Second Number" />
+        <div class="radio">
+          <p>Add</p>
+          <input type="radio" name="math" id="add-radio" value="Add" />
+          <p>Subtract</p>
+          <input type="radio" name="math" id="subract-radio" value="Subtract" />
+          <p>Multiply</p>
+          <input
+            type="radio"
+            name="math"
+            id="multiply-radio"
+            value="Multiply"
+          />
+          <p>Divide</p>
+          <input type="radio" name="math" id="divide-radio" value="Divide" />
+        </div>
+        <button id="calculate" onclick="calculateOptions()">Calculate</button>
+        <button id="reset" onclick="reset()">Reset</button>
+        <h2 id="result"></h2>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
