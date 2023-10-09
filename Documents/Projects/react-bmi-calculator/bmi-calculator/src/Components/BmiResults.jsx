@@ -24,12 +24,12 @@ function BmiResults(props) {
     bmiDescriptive = "Underweight";
     bmiParagraph =
       "Individuals with a BMI under 18.5 are considered underweight, suggesting that they may not have enough body fat for optimal health. Roughly 2.4% of the population falls into this category. Underweight individuals may experience issues such as poor bone health, weakened immune function, and reduced energy levels. Nutrition and lifestyle adjustments are often recommended to reach a healthier weight.";
-  } else if (props.finalBmi > 18.6 && props.finalBmi <= 24.9) {
+  } else if (props.finalBmi >= 18.6 && props.finalBmi <= 24.9) {
     colorChange("#C8E48D");
     bmiDescriptive = "Healthy Weight";
     bmiParagraph =
       "A BMI within the range of 18.5 to 24.9 is considered a healthy weight. Approximately 35.7% of the population falls into this category, making it the most common. Maintaining a healthy weight is associated with a lower risk of chronic diseases, improved overall health, and enhanced longevity. This range is the target for most adults seeking to maintain or achieve optimal health.";
-  } else if (props.finalBmi > 25 && props.finalBmi <= 29.9) {
+  } else if (props.finalBmi >= 25 && props.finalBmi <= 29.9) {
     colorChange("#EC8A2F");
     bmiDescriptive = "Overweight";
     bmiParagraph =
